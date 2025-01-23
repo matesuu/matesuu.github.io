@@ -1,10 +1,159 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Mateo Alado's Website</title>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #444;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+
+        .main-content .article {
+            width: 70%;
+        }
+
+        .main-content .sidebar {
+            width: 28%;
+            background-color: #fff;
+            padding: 1rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .contact-form {
+            background-color: #fff;
+            padding: 2rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+
+            .main-content .article,
+            .main-content .sidebar {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
 <body>
-    <h1>About</h1>
-    <p>This is a personal website I use to showcase some information about me to employers, as well as to post my projects to</p>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="main-content">
+            <div class="article">
+                <h2>Main Article</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor eros ut arcu aliquam, sed tincidunt ligula placerat. Vivamus ac placerat nisi. Integer maximus nisi et felis egestas, at volutpat ligula posuere. Nam ac leo a arcu bibendum egestas a nec sapien.</p>
+                <p>Nulla ut eros risus. Donec vitae urna nec ligula ullamcorper euismod. Sed vitae orci erat. In hac habitasse platea dictumst. Integer tempus, elit id luctus gravida, lorem augue venenatis nulla, in congue justo odio ac ligula.</p>
+            </div>
+            <div class="sidebar">
+                <h3>Latest News</h3>
+                <ul>
+                    <li><a href="#">Article 1</a></li>
+                    <li><a href="#">Article 2</a></li>
+                    <li><a href="#">Article 3</a></li>
+                    <li><a href="#">Article 4</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Website. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
